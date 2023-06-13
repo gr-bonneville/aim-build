@@ -1,0 +1,492 @@
+main {
+    min-height: calc(100vh - 125px);
+    margin-top: 125px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.page-header {
+    height: 300px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page-header-content {
+    max-width: 600px;
+}
+
+.page-header-content h1 {
+    margin-bottom: 15px;
+}
+
+
+/*========================== HOME PAGE ==================================*/
+
+/*HOMEPAGE HEADER*/
+
+section.cta {
+    height: auto;
+    padding: 75px 10%;
+    text-align: center;
+    background: url(../img/cta-background.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.cta .cta-content {
+    max-width: 700px;
+    margin: 0 10%;
+}
+
+section.cta h1 {
+    margin-bottom: 20px;
+}
+
+section.cta h3 {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*ABOUT SECTION*/
+
+.why-aim-left {
+    grid-column: col-start / span 5;
+}
+.why-aim-right {
+    grid-column: col-start 7 / span 6;
+}
+
+.reason-container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.reason-icon {
+    width: 77px;
+    height: 77px;
+    margin-right: 15px;
+}
+
+
+
+
+
+/*SERVICES*/
+
+
+section.home-page-services {
+    background: url(/assets/img/background-pattern.jpg);
+}
+
+.home-page-service-left {
+    grid-column: col-start / span 5;
+}
+.home-page-service-right {
+    grid-column: col-start 7 / span 6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-page-service-right h3 {
+    min-width: 230px;
+    margin: 10px auto;
+
+}
+
+.home-page-service-right h3 a {
+    text-decoration: none;
+    padding-bottom: 3px;
+    line-height: 24px;
+    border-bottom: 2px var(--gold) solid;
+    transition: all 0.2s ease;
+}
+
+.home-page-service-right h3 a:hover {
+    color: var(--gold);
+}
+
+
+
+
+
+
+/*TESTIMONIALS*/
+
+.testimonial-wrapper {
+    grid-column: col-start / span 12;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials h2 {
+    grid-column: col-start / span 12;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.testimonial-wrapper p {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.testimonial-wrapper h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--gray-drk);
+}
+
+.testimonials .controls {
+    grid-column: col-start / span 12;
+    text-align: center;
+}
+
+.testimonials .controls span {
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: var(--shadow);
+    transition: all 0.2s ease;
+    margin: 0 10px;
+    color: var(--blue);
+    border: 1px var(--blue) solid;
+    padding: 13px 15px;
+    cursor: pointer;
+}
+
+
+/*CONTACT SECTION*/
+
+section.contact {
+    background-color: var(--gray-drk);
+    position: relative;
+}
+
+.contact h2 {
+    color: var(--tan);
+}
+
+.contact-content {
+    grid-column: col-start 8 / span 5;
+}
+
+.contact-section-img {
+    background: url(/assets/img/aim-contact.jpg);
+    background-size: cover;
+    content: " ";
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.contact input:focus, .contact textarea:focus {
+    outline: none;
+}
+
+#submit {
+    width: auto;
+    border: none;
+    padding: 13px 23px;
+    margin-top: 20px;
+    background: linear-gradient(to bottom right, #BCBEA8, #A8AB94);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*=========================== ABOUT PAGE ==========================*/
+
+#about-page-header {
+    background: url(../img/about-header.jpg);
+    background-position: center;
+}
+
+.history-content {
+    grid-column: col-start 2 / span 10;
+    margin-bottom: 40px;
+}
+
+.brag-content-container {
+    display: flex;
+    grid-column: col-start 2 / span 10;
+    grid-row: 2;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.about-aim-img {
+    width: 33%;
+    object-fit: cover;
+    margin-right: 30px;
+    box-shadow: var(--shadow);
+}
+
+.about-aim-reasons-container {
+    grid-row: 3;
+    grid-column: col-start / span 12;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.about-aim-reason {
+    text-align: center;
+    width: 30%;
+}
+
+.about-aim-reason img {
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+}
+
+section.company-values {
+    background: url(../img/background-pattern.jpg);
+    position: relative;
+}
+
+.company-values-content {
+    grid-column: col-start 6 / span 7;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.company-values-content h2 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.company-values-content .value {
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 25px;
+}
+
+.company-values-img {
+    background: url(/assets/img/connect.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.partners-content {
+    grid-column: col-start / span 12;
+}
+
+.partners-heading {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.badges img {
+    width: 300px;
+    margin: 0 30px 30px 30px;
+    box-shadow: var(--shadow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    main {
+        margin-top: 106px;
+    }
+
+    /*================ HOMEPAGE ==================*/
+
+    /*CONTACT SECTION*/
+    .contact-content {
+        grid-column: col-start / span 12;
+        text-align: center;
+        margin-top: 300px;
+        max-width: 700px;
+    }
+
+    .contact-section-img {
+        height: 300px;
+        width: 100%;
+        background-position: center;
+    }
+
+
+
+    /*================ ABOUT PAGE ==================*/
+
+    .history-content {
+        grid-column: col-start / span 12;
+    }
+    
+    .brag-content-container {
+        display: flex;
+        grid-column: col-start / span 12;
+    }
+
+    .company-values-img {
+        display: none;
+    }
+    .company-values-content {
+        grid-column: col-start / span 12;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .company-values-content .value {
+        width: 40%;
+        margin: 0 5% 25px 5%;
+    }
+}
+
+
+
+
+@media (max-width: 865px) {
+
+    section.page-header {
+        height: 250px;
+    }
+
+    /*================ HOMEPAGE ==================*/
+
+    /*ABOUT SECTION*/
+    .why-aim-left {
+        grid-column: col-start / span 12;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .why-aim-right {
+        grid-column: col-start / span 12;
+        text-align: center;
+    }
+    .reason-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reason-icon {
+        width: 77px;
+        height: 77px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+
+    /*SERVICES SECTION*/
+    .home-page-service-left {
+        grid-column: col-start / span 12;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .home-page-service-right {
+        grid-column: col-start / span 12;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    /*TESTIMONIALS SECTION*/
+    .testimonial-wrapper p {
+        font-size: 14px;
+    }
+
+
+
+    /*================ ABOUT PAGE ==================*/
+
+    .history-content {
+        text-align: center;
+    }
+    
+    .brag-content-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .about-aim-img {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .brag-content {
+        text-align: center;
+    }
+
+    .about-aim-reasons-container {
+        flex-direction: column;
+    }
+
+    .about-aim-reason {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-aim-reason img {
+        width: 60%;
+    }
+
+    .company-values-content .value {
+        width: 80%;
+        margin: 0 10% 25px 10%;
+    }
+}

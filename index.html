@@ -4,9 +4,331 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>AIM</title>
 </head>
 <body>
-    
+
+    <header>
+
+        <!--TOP BAR-->
+        <div class="top-bar-wrapper">
+            <div class="top-bar">
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+
+                <div class="phone">
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(385) 217-6032</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--MAIN NAV-->
+        <nav id="main-nav">
+            <div class="main-nav-wrapper">
+                
+                <a href="index.html" class="logo">
+                    <img src="assets/img/aim-logo.png" alt="AIM Logo" class="logo-img">
+                </a>
+
+                <!-- Mobile Nav Open/Close Buttons -->
+                <span class="mobile-nav-open-btn mobile-nav-btn" id="openBtn"><i class="fa-solid fa-bars mobile-nav-open-icon"></i></span>
+                <span class="mobile-nav-close-btn mobile-nav-btn hide" id="closeBtn"><i class="fa-solid fa-xmark mobile-nav-close-icon"></i></span>
+
+                <ul class="main-nav-list">
+                    <li class="dropdown-container">
+                        <div class="main-nav-link-wrapper">
+                            <a href="about.html" class="main-nav-link">About</a>
+                        </div>
+                        <i class="fa-solid fa-chevron-down menu-expand"></i>
+                        <ul class="dropdown">
+                            <li><a href="team.html" class="sub-nav-link">Our Team</a></li>
+                            <li><a href="careers.html" class="sub-nav-link">Careers</a></li>
+                            <li><a href="community.html" class="sub-nav-link">Community</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-container">
+                        <div class="main-nav-link-wrapper">
+                            <a href="services.html" class="main-nav-link">Services</a>
+                        </div>
+                        <i class="fa-solid fa-chevron-down menu-expand"></i>
+                        <ul class="dropdown">
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                            <li><a href="service.html" class="sub-nav-link">Service</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-container">
+                        <div class="main-nav-link-wrapper">
+                            <a href="industries.html" class="main-nav-link">Industries</a>
+                        </div>
+                        <i class="fa-solid fa-chevron-down menu-expand"></i>
+                        <ul class="dropdown">
+                            <li><a href="industry.html" class="sub-nav-link">Industry</a></li>
+                            <li><a href="industry.html" class="sub-nav-link">Industry</a></li>
+                            <li><a href="industry.html" class="sub-nav-link">Industry</a></li>
+                            <li><a href="industry.html" class="sub-nav-link">Industry</a></li>
+                            <li><a href="industry.html" class="sub-nav-link">Industry</a></li>
+                            <li><a href="industry.html" class="sub-nav-link">Industry</a></li>
+                            <li><a href="industry.html" class="sub-nav-link">Industry</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-container">
+                        <div class="main-nav-link-wrapper">
+                            <a href="markets.html" class="main-nav-link">Markets</a>
+                        </div>
+                        <i class="fa-solid fa-chevron-down menu-expand"></i>
+                        <ul class="dropdown">
+                            <li><a href="market.html" class="sub-nav-link">Market</a></li>
+                            <li><a href="market.html" class="sub-nav-link">Market</a></li>
+                            <li><a href="market.html" class="sub-nav-link">Market</a></li>
+                            <li><a href="market.html" class="sub-nav-link">Market</a></li>
+                            <li><a href="market.html" class="sub-nav-link">Market</a></li>
+                            <li><a href="market.html" class="sub-nav-link">Market</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="main-nav-link-wrapper">
+                            <a href="resources.html" class="main-nav-link">Resources</a>
+                        </div>
+                    </li>
+                    <li class="cta"><a href="contact.html" class="btn btn-blue">Contact Us</a></li>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </ul> 
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cta">
+            <div class="cta-content">
+                <h1 class="white">AIM Digital Agency</h1>
+                <h3 class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies mauris elementum arcu sagittis dictum. Integer ante odio, iaculis vitae justo sit amet</h3>
+                <a href="contact.html" class="btn btn-yellow">Contact Us</a>
+            </div>
+        </section>
+
+        <section class="why-aim">
+            <div class="grid-wrapper">
+                <div class="why-aim-left">
+                    <h2>Why Aim?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies mauris elementum arcu sagittis dictum. Integer ante odio, iaculis vitae justo sit amet, tempor semper mauris. Phasellus consectetur malesuada lorem, ac lobortis magna condimentum non. Aenean sodales elit sed magna malesuada auctor. Phasellus dictum dignissim dolor, nec dapibus lorem</p>
+                    <a href="about.html" class="btn btn-ghost">Learn More</a>
+                </div>
+
+                <div class="why-aim-right">
+                    <div class="reason-container">
+                        <img src="/assets/img/settings-gold.png" alt="" class="reason-icon">
+                        <div class="reason-content">
+                            <h3>Reason</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies mauris elementum arcu sagittis dictum. Integer ante odio, iaculis vitae justo sit amet, tempor semper mauris. </p>
+                        </div>
+                    </div>
+                    <div class="reason-container">
+                        <img src="/assets/img/growth.png" alt="" class="reason-icon">
+                        <div class="reason-content">
+                            <h3>Reason</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies mauris elementum arcu sagittis dictum. Integer ante odio, iaculis vitae justo sit amet, tempor semper mauris. </p>
+                        </div>
+                    </div>
+                    <div class="reason-container">
+                        <img src="/assets/img/ads.png" alt="" class="reason-icon">
+                        <div class="reason-content">
+                            <h3>Reason</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies mauris elementum arcu sagittis dictum. Integer ante odio, iaculis vitae justo sit amet, tempor semper mauris. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-page-services">
+            <div class="grid-wrapper">
+                <div class="home-page-service-left">
+                    <h2 class="white">Services</h2>
+                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies mauris elementum arcu sagittis dictum. Integer ante odio, iaculis vitae justo sit amet, tempor semper mauris. Phasellus consectetur malesuada lorem, ac lobortis magna condimentum non. Aenean sodales elit sed magna malesuada auctor. Phasellus dictum dignissim dolor, nec dapibus lorem</p>
+                    <a href="services.html" class="btn btn-yellow">Services</a>
+                </div>
+                <div class="home-page-service-right">
+                    <h3><a href="service.html" class="white">SEM</a></h3>
+                    <h3><a href="service.html" class="white">Owned & Operated</a></h3>
+                    <h3><a href="service.html" class="white">SEO</a></h3>
+                    <h3><a href="service.html" class="white">Creative Services</a></h3>
+                    <h3><a href="service.html" class="white">Programmatic</a></h3>
+                    <h3><a href="service.html" class="white">Website Development</a></h3>
+                    <h3><a href="service.html" class="white">Social Media</a></h3>
+                    <h3><a href="service.html" class="white">Digital Strategy</a></h3>
+                    <h3><a href="service.html" class="white">Video</a></h3>
+                    <h3><a href="service.html" class="white">Other Digital Solutions</a></h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="grid-wrapper">
+
+                <h2>Client Testimonials</h2>
+                <!-- Testimonial Slider Controls used in JS -->
+                <div class="controls">
+                    <span class="prev"><i class="fa-solid fa-arrow-left"></i></span>
+                    <span class="next"><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+
+                <div class="testimonial-wrapper">
+
+                    <div class="testimonial">
+                        <div class="content">
+                            <p>"I enjoy working for Bonneville because having worked for various other ownerships during my 20+ years in this business, I can honestly say, in my experience, Bonneville cares more about its employees and community than any others I have worked with. I also, enjoy working for Bonneville because from the very top of leadership down it is clear they are committed to the values the company sets for itself, again, unlike others in my experience. I have always believed that those of us blessed enough to work in this industry have great opportunity and responsibility to use it to help our communities understand, sift through fact/fiction, make informed choices, and know they are not alone. That is truer now than ever for me. I will forever be grateful to Bonneville for allowing me the space to do that, and truly feel like I can, and do make a difference."</p>
+                            <h5>COMPANY NAME</h5>
+                        </div> <!-- END content -->
+                    </div> <!-- END Testimonial -->
+
+                    <div class="testimonial">
+                        <div class="content">
+                            <p>"I enjoy working at Bonneville because I am not only treated like family, but my opinions and outlooks are valued! I love and thrive in the open and inviting environment that we host. Whether it be I have a suggestion on a certain way we are doing a process or if I am invited to share my thoughts, I always know that the company is truly listening. Bonneville does an extremely well job at making sure “we” the employees weigh in as much as we possibly can and then they adjust to make things better for us. This is the best company I have ever worked for, and they maintain and try to keep it that way so we can all grow together."</p>
+                            <h5>COMPANY NAME</h5>
+                        </div> <!-- END content -->
+                    </div> <!-- END Testimonial -->
+
+                    <div class="testimonial">
+                        <div class="content">
+                            <p>"I joined Bonneville in July 2020, and from day one I felt valued as an employee and that our leadership team cares about me as a person, not just a means to make money. Every day I get to work with our team of professionals, who I learn from, and who push me to take on new and challenging opportunities. I also get great satisfaction being in a role where I can make a meaningful difference in our clients businesses."</p>
+                            <h5>COMPANY NAME</h5>
+                        </div> <!-- END content -->
+                    </div> <!-- END Testimonial -->
+
+                    <div class="testimonial">
+                        <div class="content">
+                            <p>"Working at Bonneville has afforded me and my teams the opportunity to further grow and develop our skills, knowledge, and experience and has always provided our teams with the resources and support needed to deliver high results for our clients, employees, and in my personal growth and development experiences."</p>
+                            <h5>COMPANY NAME</h5>
+                        </div> <!-- END content -->
+                    </div> <!-- END Testimonial -->
+
+                    <div class="testimonial">
+                        <div class="content">
+                            <p>"I’ve spent 20 years building a career I’ve always dreamed about. I love that I’ve found a home at Bonnevile where my values, and commitment to my community are further inspired. During the pandemic, I was never more proud to work for this company. The health and safety of our teammates and families always came first. As an on-air personality reporting to the studio daily, I always felt safe in the steps our company took to further ensure our health and safety."</p>
+                            <h5>COMPANY NAME</h5>
+                        </div> <!-- END content -->
+                    </div> <!-- END Testimonial -->
+
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-section-img"></div>
+            <div class="grid-wrapper">
+                <div class="contact-content">
+                    <h2>Contact Us</h2>
+                    <form action="">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email" name="" id="">
+                        <input type="text" placeholder="Phone">
+                        <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
+                        <input id="submit" type="submit" value="Submit" class="btn btn-blue">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-column">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/aim-logo-white.png" alt="AIM Logo" class="logo-img">
+                </a>
+                <p class="white">55 N 300 W.</br>Salt Lake City, UT 84101</p>
+                <p class="white"><a href="#">(385) 217-6032</a></p>
+                <p class="white"><a href="#">aiminfo@aimdigitalagency.com</a></p>
+            </div>
+            <div class="right-column">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Service</a></li>
+                </ul>
+                <ul>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+                    <li><a href="industry.html">Industry</a></li>
+                </ul>
+                <ul>
+                    <li><a href="markets.html">Markets</a></li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="market.html">Market</a></li>
+                </ul>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <p><a href="#">Copyright</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
