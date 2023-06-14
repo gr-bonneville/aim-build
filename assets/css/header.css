@@ -8,9 +8,13 @@ header {
     box-shadow: var(--shadow);
 }
 
+.rotate {
+    transform: rotate(180deg);
+    transition: all 0.2s ease;
+}
+
 .top-bar {
     width: 100%;
-    max-width: 1140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +75,6 @@ header {
 
 #main-nav .main-nav-wrapper  {
     width: 100%;
-    max-width: 1140px;
     position: relative;
 }
 
@@ -306,10 +309,7 @@ header {
         transition: all 0.2s ease;
     }
 
-    .rotate {
-        transform: rotate(180deg);
-        transition: all 0.2s ease;
-    }
+    
 
     #main-nav .social-icons {
         display: flex;

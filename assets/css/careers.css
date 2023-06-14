@@ -1,0 +1,36 @@
+#careers-page-header {
+    background: url(../img/road.jpg);
+    background-position: center;
+}
+
+section.icon-list {
+    background: url(../img/background-pattern.jpg);
+}
+
+.icon-list-wrapper {
+    grid-column: col-start / span 12;
+}
+
+.icon-list-heading {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.icon-list-items-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.icon-list-item {
+    text-align: center;
+    width: 200px;
+    margin: 0 30px 30px 30px;
+}
+
+.icon-list-item img {
+    width: 100px;
+    margin-bottom: 20px;
+}
