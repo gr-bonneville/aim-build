@@ -173,6 +173,12 @@ section.home-page-services {
     border: 1px var(--blue) solid;
     padding: 13px 15px;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.testimonials .controls span:hover {
+    color: var(--gold);
+    border: 1px var(--gold) solid;
 }
 
 
@@ -219,6 +225,11 @@ section.contact {
     margin-top: 20px;
     background: linear-gradient(to bottom right, #BCBEA8, #A8AB94);
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#submit:hover {
+    background: linear-gradient(to bottom right, #BCBEA8, #BCBEA8);
 }
 
 

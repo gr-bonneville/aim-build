@@ -38,13 +38,18 @@
 
 .contact-information #submit {
     width: auto;
-    border: none;
     color: var(--blue);
     border: 1px var(--blue) solid;
     padding: 13px 22px;
     margin-top: 20px;
     cursor: pointer;
     background: var(--white);
+    transition: all 0.2s ease;
+}
+
+.contact-information #submit:hover {
+    color: var(--gold);
+    border: 1px var(--gold) solid;
 }
 
 @media (max-width: 1100px) {
