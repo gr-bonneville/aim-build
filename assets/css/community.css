@@ -1,6 +1,7 @@
 #community-page-header {
     background: url(../img/community-header.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .row-with-right-img {

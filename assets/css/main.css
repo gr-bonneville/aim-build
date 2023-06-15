@@ -40,6 +40,7 @@ section.cta {
     padding: 75px 10%;
     text-align: center;
     background: url(../img/cta-background.jpg);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +92,8 @@ section.cta h3 {
 
 
 section.home-page-services {
-    background: url(/assets/img/background-pattern.jpg);
+    background: url(../img/background-pattern.jpg);
+    background-size: cover;
 }
 
 .home-page-service-left {
@@ -198,7 +200,7 @@ section.contact {
 }
 
 .contact-section-img {
-    background: url(/assets/img/aim-contact.jpg);
+    background: url(../img/aim-contact.jpg);
     background-size: cover;
     content: " ";
     height: 100%;
@@ -242,6 +244,7 @@ section.contact {
 #about-page-header {
     background: url(../img/about-header.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .history-content {
@@ -306,7 +309,7 @@ section.company-values {
 }
 
 .company-values-img {
-    background: url(/assets/img/connect.jpg);
+    background: url(../img/connect.jpg);
     background-size: cover;
     background-position: center top;
     height: 100%;

@@ -1,6 +1,7 @@
 #team-page-header {
     background: url(../img/team-header.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .team-container {
@@ -37,7 +38,7 @@ section.join-our-team {
 }
 
 .join-our-team-img {
-    background: url(/assets/img/team.jpg);
+    background: url(../img/team.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -56,7 +57,7 @@ section.join-our-team {
     }
 
     .join-our-team-img {
-        background: url(/assets/img/team.jpg);
+        background: url(../img/team.jpg);
         background-size: cover;
         background-position: center;
         height: 400px;

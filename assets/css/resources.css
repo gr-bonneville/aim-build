@@ -1,6 +1,7 @@
 #resources-page-header {
     background: url(../img/reources-page-header.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .tools-container {

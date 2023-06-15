@@ -1,6 +1,7 @@
 #careers-page-header {
     background: url(../img/road.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 section.icon-list {
