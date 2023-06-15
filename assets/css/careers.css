@@ -5,6 +5,7 @@
 
 section.icon-list {
     background: url(../img/background-pattern.jpg);
+    background-size: cover;
 }
 
 .icon-list-wrapper {

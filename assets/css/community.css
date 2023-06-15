@@ -59,6 +59,17 @@
     .row-with-left-img img {
         display: none;
     }
+
+    .point {
+        width: 40%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 25px;
+    }
+
+    .row-with-left-img-content-wrapper {
+        text-align: center;
+    }
 }
 
 
@@ -89,6 +100,7 @@
     .point {
         width: 80%;
         margin-right: 0;
+        margin-left: 0;
         margin-bottom: 25px;
     }
 }

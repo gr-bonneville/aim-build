@@ -69,4 +69,8 @@ section.join-our-team {
     section.join-our-team {
         margin-bottom: 400px;
     }
+
+    .team-member h4 {
+        font-size: 14px;
+    }
 }

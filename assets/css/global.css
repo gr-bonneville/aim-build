@@ -127,9 +127,11 @@ a {
     color: var(--blue);
 }
 
-a:hover {
+a:hover, a:hover * {
     color: var(--gold);
 }
+
+
 
 @media (max-width: 865px) {
 

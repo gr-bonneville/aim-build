@@ -71,5 +71,6 @@
     .information {
         grid-column: col-start / span 12;
         text-align: center;
+        padding-right: 0;
     }
 }

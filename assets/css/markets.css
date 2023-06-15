@@ -1,0 +1,122 @@
+#markets-page-header {
+    background: url(../img/markets-page-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#market-page-header {
+    background: url(../img/market-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.market {
+    grid-column: col-start 2 / span 10;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.market img {
+    width: 40%;
+    box-shadow: var(--shadow);
+}
+
+.market .market-content {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.single-top-section .content {
+    grid-column: col-start / span 7;
+    margin-right: 50px;
+}
+
+.single-top-section .content img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.single-top-section .contact-content {
+    padding-left: 30px;
+    border-left: 1px var(--gray-lt) solid;
+}
+
+.single-top-section .contact-content h2 {
+    font-size: 24px;
+}
+
+.single-top-section .contact-content input, .single-top-section .contact-content textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px var(--blue) solid;
+    background-color: #F5F5F5;
+}
+
+.single-top-section .contact-content input:focus, .single-top-section .contact-content textarea:focus {
+    outline: none;
+    border-bottom: 3px var(--gold) solid;
+}
+
+.single-top-section .contact-content #submit {
+    width: auto;
+    border: none;
+    color: var(--blue);
+    border: 1px var(--blue) solid;
+    padding: 13px 22px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: var(--white);
+}
+
+@media (max-width: 1100px) {
+    .market {
+        flex-direction: column;
+    }
+
+    .market img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .market .market-content {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .single-top-section .contact-content {
+        grid-column: col-start 8 / span 5;
+        text-align: left;
+        margin-top: 0;
+        max-width: auto;
+    }
+}
+
+@media (max-width: 865px) {
+    .market {
+        grid-column: col-start / span 12;
+    }
+
+    .single-top-section .contact-content {
+        grid-column: col-start / span 12;
+        text-align: center;
+        margin-top: 40px;
+        max-width: auto;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .single-top-section .content {
+        grid-column: col-start / span 12;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .single-top-section .content img {
+        width: 80%;
+        margin-top: 40px;
+    }
+}
