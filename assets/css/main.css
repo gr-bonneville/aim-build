@@ -259,15 +259,20 @@ section.contact {
 #submit {
     width: auto;
     border: none;
-    padding: 13px 23px;
+    padding: 15px 22px;
     margin-top: 20px;
-    background: linear-gradient(to bottom right, #BCBEA8, #A8AB94);
+    color: var(--white);
+    background: var(--green);
+    border: 1px var(--green) solid;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 #submit:hover {
-    background: linear-gradient(to bottom right, #BCBEA8, #BCBEA8);
+    color: var(--black);
+    background: var(--tan);
+    border: 1px var(--tan) solid;
+    transition: all 0.3s ease;
 }
 
 

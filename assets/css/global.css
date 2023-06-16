@@ -38,7 +38,7 @@ body {
     --shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 .btn {
-    padding: 16px 23px;
+    padding: 15px 22px;
     display: inline-block;
     border-radius: 100px;
     font-size: 16px;
@@ -50,28 +50,34 @@ body {
     margin-top: 15px;
 }
 
+.btn:hover {
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 .btn-blue {
     color: var(--white);
-    background: linear-gradient(to bottom right, #434f80, #1A2035);
+    background: var(--blue);
+    border: 1px var(--blue) solid;
     transition: all 0.3s ease;
 }
 
 .btn-blue:hover {
-    color: var(--white);
-    background: linear-gradient(to bottom right, #434f80, #434f80);
-    transition: all 0.3s ease;
+    background: var(--white);
+    color: var(--blue);
 }
 
 .btn-yellow {
     color: var(--blue);
-    background: linear-gradient(to bottom right, #FCC767, #FCB535);
+    background: var(--gold);
+    border: 1px var(--gold) solid;
     transition: all 0.3s ease;
 }
 
 .btn-yellow:hover {
     color: var(--blue);
-    background: linear-gradient(to bottom right, #FCC767, #FCC767);
+    background: #ffd079;
+    border: 1px #ffd079 solid;
     transition: all 0.3s ease;
 }
 
@@ -79,21 +85,27 @@ body {
     color: var(--blue);
     border: 1px var(--blue) solid;
     padding: 15px 22px;
+    transition: all 0.3s ease;
 }
 
 .btn-ghost:hover {
     color: var(--gold);
     border: 1px var(--gold) solid;
+    transition: all 0.3s ease;
 }
 
 .btn-green {
     color: var(--white);
-    background: linear-gradient(to bottom right, #BCBEA8, #A8AB94);
+    background: var(--green);
+    border: 1px var(--green) solid;
+    transition: all 0.3s ease;
 }
 
 .btn-green:hover {
-    color: var(--white);
-    background: linear-gradient(to bottom right, #BCBEA8, #BCBEA8);
+    color: var(--black);
+    background: var(--tan);
+    border: 1px var(--tan) solid;
+    transition: all 0.3s ease;
 }
 
 .white {
@@ -172,9 +184,6 @@ a:hover, a:hover * {
 
 @media (max-width: 865px) {
 
-    section {
-        padding: 40px 10%;
-    }
 
     h1 {
         font-size: 48px;
