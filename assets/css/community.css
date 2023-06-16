@@ -15,6 +15,7 @@
     object-fit: cover;
     margin-left: 50px;
     box-shadow: var(--shadow);
+    flex-shrink: 0;
 }
 
 .row-with-right-img-content {
@@ -48,6 +49,7 @@
     width: 25%;
     object-fit: cover;
     margin-right: 50px;
+    flex-shrink: 0;
 }
 
 .point {

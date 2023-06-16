@@ -27,6 +27,38 @@ expanders.forEach(expander => {
 
 
 
+
+
+
+
+
+
+
+
+const slideChildren = new IntersectionObserver ((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const children = entry.target.children;
+            console.log(children);
+            for (let child of children) {
+                child.classList.add('show');
+            }
+        }
+    });
+}, {
+    threshold: .33
+});
+
+const hiddenParents = document.querySelectorAll('.hidden-parent');
+hiddenParents.forEach((el) => {
+    slideChildren.observe(el);
+});
+
+
+
+
+
+
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const testimonials = document.querySelectorAll('.testimonial');

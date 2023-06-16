@@ -39,6 +39,10 @@ header {
     font-size: 18px;
 }
 
+.top-bar .social-icons i:hover {
+    color: var(--gold);
+}
+
 .top-bar .phone i {
     color: var(--white);
     font-size: 14px;
@@ -57,6 +61,10 @@ header {
     font-weight: 400;
     color: var(--white);
     text-decoration: none;
+}
+
+.top-bar .phone a:hover i, .top-bar .phone a:hover span {
+    color: var(--gold);
 }
 
 #main-nav {

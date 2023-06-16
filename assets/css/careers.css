@@ -32,6 +32,16 @@ section.icon-list {
     margin: 0 30px 30px 30px;
 }
 
+.icon-list-item:nth-child(2) {
+    transition-delay: 200ms;
+}
+.icon-list-item:nth-child(3) {
+    transition-delay: 400ms;
+}
+.icon-list-item:nth-child(4) {
+    transition-delay: 600ms;
+}
+
 .icon-list-item img {
     width: 100px;
     margin-bottom: 20px;

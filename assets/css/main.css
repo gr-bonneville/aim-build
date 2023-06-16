@@ -5,6 +5,7 @@ main {
 
 section {
     width: 100%;
+    padding: 75px 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,6 +79,13 @@ section.cta h3 {
     margin-bottom: 25px;
 }
 
+.reason-container:nth-child(2) {
+    transition-delay: 200ms;
+}
+.reason-container:nth-child(3) {
+    transition-delay: 400ms;
+}
+
 .reason-icon {
     width: 77px;
     height: 77px;
@@ -103,6 +111,34 @@ section.home-page-services {
     grid-column: col-start 7 / span 6;
     display: flex;
     flex-wrap: wrap;
+}
+
+.service-link:nth-child(2) {
+    transition-delay: 100ms;
+}
+.service-link:nth-child(3) {
+    transition-delay: 200ms;
+}
+.service-link:nth-child(4) {
+    transition-delay: 300ms;
+}
+.service-link:nth-child(5) {
+    transition-delay: 400ms;
+}
+.service-link:nth-child(6) {
+    transition-delay: 500ms;
+}
+.service-link:nth-child(7) {
+    transition-delay: 600ms;
+}
+.service-link:nth-child(8) {
+    transition-delay: 700ms;
+}
+.service-link:nth-child(9) {
+    transition-delay: 800ms;
+}
+.service-link:nth-child(10) {
+    transition-delay: 900ms;
 }
 
 .home-page-service-right h3 {
@@ -265,6 +301,7 @@ section.contact {
     object-fit: cover;
     margin-right: 30px;
     box-shadow: var(--shadow);
+    flex-shrink: 0;
 }
 
 .three-column-container {
@@ -278,6 +315,14 @@ section.contact {
 .column {
     text-align: center;
     width: 30%;
+}
+
+.column:nth-child(2) {
+    transition-delay: 150ms;
+}
+
+.column:nth-child(3) {
+    transition-delay: 300ms;
 }
 
 .column img {
@@ -307,6 +352,31 @@ section.company-values {
     margin-right: 5%;
     margin-bottom: 25px;
 }
+
+.company-values-content .value:nth-child(1) {
+    transition-delay: 100ms;
+}
+
+.company-values-content .value:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.company-values-content .value:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.company-values-content .value:nth-child(4) {
+    transition-delay: 400ms;
+}
+
+.company-values-content .value:nth-child(5) {
+    transition-delay: 500ms;
+}
+
+.company-values-content .value:nth-child(6) {
+    transition-delay: 600ms;
+}
+
 
 .company-values-img {
     background: url(../img/connect.jpg);
@@ -412,6 +482,10 @@ section.company-values {
 
 @media (max-width: 865px) {
 
+    section {
+        padding: 40px 10%;
+    }
+    
     section.page-header {
         height: 250px;
     }
@@ -455,6 +529,12 @@ section.company-values {
     /*TESTIMONIALS SECTION*/
     .testimonial-wrapper p {
         font-size: 14px;
+    }
+
+    .testimonial-wrapper h5 {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--gray-drk);
     }
 
 
