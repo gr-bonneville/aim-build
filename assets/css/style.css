@@ -1,7 +1,9 @@
-@import url('global.css');
 @import url('header.css');
-@import url('footer.css');
 @import url('main.css');
+
+/*
+@import url('global.css');
+@import url('footer.css');
 @import url('team.css');
 @import url('community.css');
 @import url('careers.css');
@@ -10,3 +12,4 @@
 @import url('markets.css');
 @import url('industries.css');
 @import url('services.css');
+*/

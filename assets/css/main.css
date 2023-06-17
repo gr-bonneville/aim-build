@@ -1,3 +1,185 @@
+/*================ GLOBAL ===================*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 1;
+}
+
+.grid-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+}
+
+.no-grid-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 75px 10%;
+}
+
+  :root {
+    --blue: #343F6A;
+    --gold: #FCB535;
+    --tan: #E2D6C2;
+    --green: #A8AB94;
+    --gray-drk: #787A7C;
+    --gray-lt: #CECECE;
+    --black: #272924;
+    --white: #FFFFFF;
+
+    --shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.btn {
+    padding: 15px 22px;
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: var(--shadow);
+    transition: all 0.2s ease;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-blue {
+    color: var(--white);
+    background: var(--blue);
+    border: 1px var(--blue) solid;
+    transition: all 0.3s ease;
+}
+
+.btn-blue:hover {
+    background: var(--white);
+    color: var(--blue);
+}
+
+.btn-yellow {
+    color: var(--blue);
+    background: var(--gold);
+    border: 1px var(--gold) solid;
+    transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+    color: var(--blue);
+    background: #ffd079;
+    border: 1px #ffd079 solid;
+    transition: all 0.3s ease;
+}
+
+.btn-ghost {
+    color: var(--blue);
+    border: 1px var(--blue) solid;
+    padding: 15px 22px;
+    transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+    color: var(--gold);
+    border: 1px var(--gold) solid;
+    transition: all 0.3s ease;
+}
+
+.btn-green {
+    color: var(--white);
+    background: var(--green);
+    border: 1px var(--green) solid;
+    transition: all 0.3s ease;
+}
+
+.btn-green:hover {
+    color: var(--black);
+    background: var(--tan);
+    border: 1px var(--tan) solid;
+    transition: all 0.3s ease;
+}
+
+.white {
+    color: var(--white);
+}
+
+.tan {
+    color: var(--tan);
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 76px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+a:hover, a:hover * {
+    color: var(--gold);
+}
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.hidden-down {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
 main {
     min-height: calc(100vh - 125px);
     margin-top: 125px;
@@ -420,6 +602,522 @@ section.company-values {
 
 
 
+/*======================= TEAM PAGE ======================*/
+
+#team-page-header {
+    background: url(../img/team-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.team-container {
+    grid-column: col-start / span 12;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    width: 300px;
+    margin: 0 30px 50px 30px;
+}
+
+.team-member h4 {
+    color: var(--gold);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.team-member img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+section.join-our-team {
+    background-color: var(--gray-drk);
+    position: relative;
+}
+
+.join-our-team-content {
+    grid-column: col-start / span 6;
+}
+
+.join-our-team-img {
+    background: url(../img/team.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+
+/*===================== COMMUNITY PAGE ======================*/
+#community-page-header {
+    background: url(../img/community-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row-with-right-img {
+    grid-column: col-start / span 12;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.row-with-right-img img {
+    width: 40%;
+    object-fit: cover;
+    margin-left: 50px;
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+}
+
+.row-with-right-img-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row-with-left-img {
+    grid-row: 2;
+    grid-column: col-start / span 12;
+    display: flex;
+}
+
+.row-with-left-img h2 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.row-with-left-img-content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.row-with-left-img-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-with-left-img img {
+    width: 25%;
+    object-fit: cover;
+    margin-right: 50px;
+    flex-shrink: 0;
+}
+
+.point {
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+/*====================CAREERS PAGE=====================*/
+
+#careers-page-header {
+    background: url(../img/road.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.icon-list {
+    background: url(../img/background-pattern.jpg);
+    background-size: cover;
+}
+
+.icon-list-wrapper {
+    grid-column: col-start / span 12;
+}
+
+.icon-list-heading {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.icon-list-items-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.icon-list-item {
+    text-align: center;
+    width: 200px;
+    margin: 0 30px 30px 30px;
+}
+
+.icon-list-item:nth-child(2) {
+    transition-delay: 200ms;
+}
+.icon-list-item:nth-child(3) {
+    transition-delay: 400ms;
+}
+.icon-list-item:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.icon-list-item img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+
+
+/*====================RESOURCES PAGE=====================*/
+
+#resources-page-header {
+    background: url(../img/reources-page-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tools-container {
+    grid-column: col-start / span 12;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.faq .grid-wrapper {
+    margin-top: 0;
+}
+
+.faq-container {
+    grid-column: col-start / span 12;
+}
+
+.faq .menu-expand {
+    display: inline;
+    float: right;
+    position: relative;
+    bottom: 22px;
+    right: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.questions-list {
+    list-style: none;
+}
+
+.questions-list li {
+    margin-bottom: 30px;
+}
+
+.questions-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question-container {
+    position: relative;
+    padding: 2px 30px 2px 5px;
+    width: 100%;
+    border-bottom: 1px solid var(--gold);
+}
+
+.answer {
+    visibility: visible;
+    height: 0;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.1s ease;
+    margin-top: 5px;
+    margin-right: 0;
+    padding: 5px;
+}
+
+.answer.dropdown-open {
+    height: auto;
+    max-height: 1000px;
+    opacity: 1;
+    transition: all 0.3s ease 0.1s;
+}
+
+
+
+/*====================CONTACT PAGE=====================*/
+
+.information {
+    grid-column: col-start / span 6;
+}
+
+.contact-information h1 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+.contact-information p {
+    margin-bottom: 30px;
+}
+
+.contact-information h4 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+.contact-information input, .contact-information textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px var(--blue) solid;
+    background-color: #F5F5F5;
+}
+
+.contact-information input:focus, .contact-information textarea:focus {
+    outline: none;
+    border-bottom: 3px var(--gold) solid;
+}
+
+.contact-information #submit {
+    width: auto;
+    color: var(--blue);
+    border: 1px var(--blue) solid;
+    padding: 13px 22px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: var(--white);
+    transition: all 0.2s ease;
+}
+
+.contact-information #submit:hover {
+    color: var(--gold);
+    border: 1px var(--gold) solid;
+}
+
+
+
+/*====================MARKETS PAGE=====================*/
+
+#markets-page-header {
+    background: url(../img/markets-page-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#market-page-header {
+    background: url(../img/market-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.market {
+    grid-column: col-start 2 / span 10;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.market img {
+    width: 40%;
+    box-shadow: var(--shadow);
+}
+
+.market .market-content {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.single-top-section .content {
+    grid-column: col-start / span 7;
+    margin-right: 50px;
+}
+
+.single-top-section .content img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.single-top-section .contact-content {
+    padding-left: 30px;
+    border-left: 1px var(--gray-lt) solid;
+}
+
+.single-top-section .contact-content h2 {
+    font-size: 24px;
+}
+
+.single-top-section .contact-content input, .single-top-section .contact-content textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px var(--blue) solid;
+    background-color: #F5F5F5;
+}
+
+.single-top-section .contact-content input:focus, .single-top-section .contact-content textarea:focus {
+    outline: none;
+    border-bottom: 3px var(--gold) solid;
+}
+
+.single-top-section .contact-content #submit {
+    width: auto;
+    border: none;
+    color: var(--blue);
+    border: 1px var(--blue) solid;
+    padding: 13px 22px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: var(--white);
+    transition: all 0.2s ease;
+}
+
+.single-top-section .contact-content #submit:hover {
+    color: var(--gold);
+    border: 1px var(--gold) solid;
+}
+
+
+
+/*====================INDUSTIES PAGE=====================*/
+
+#industries-page-header {
+    background: url(../img/industry-page-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.industries-container {
+    grid-column: col-start / span 12;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.industry {
+    background: url(../img/industry.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.industry-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--blue);
+    opacity: .7;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow);
+}
+
+.industry h3 {
+    opacity: 1;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.industry:hover .industry-bg {
+    opacity: .9;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+.industry:hover h3 {
+    color: var(--gold);
+}
+
+
+
+/*====================SERVICES PAGE=====================*/
+
+#services-page-header {
+    background: url(../img/service-heading.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.approach-container {
+    grid-column: col-start / span 12;
+}
+
+.approach-heading {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 10px auto;
+}
+
+.approach-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.approach-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    padding: 50px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.approach-item h3 {
+    margin-bottom: 10px;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -437,12 +1135,19 @@ section.company-values {
         margin-top: 106px;
     }
 
+    .hidden-down, .hidden-left, .hidden-right {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+
     /*================ HOMEPAGE ==================*/
 
     /*CONTACT SECTION*/
     .contact-content {
         grid-column: col-start / span 12;
         text-align: center;
+        margin: 0 auto;
         margin-top: 300px;
         max-width: 700px;
     }
@@ -480,12 +1185,142 @@ section.company-values {
         width: 40%;
         margin: 0 5% 25px 5%;
     }
+
+
+    /*=============COMMUNITY PAGE=================*/
+    .row-with-left-img img {
+        display: none;
+    }
+
+    .point {
+        width: 40%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 25px;
+    }
+
+    .row-with-left-img-content-wrapper {
+        text-align: center;
+    }
+
+
+
+
+
+    /*====================CAREERS PAGE=====================*/
+
+
+
+    /*====================RESOURCES PAGE=====================*/
+
+
+
+    /*====================CONTACT PAGE=====================*/
+
+    .contact-information .contact-content {
+        grid-column: col-start 7 / span 6;
+        text-align: left;
+        margin-top: 0;
+        max-width: auto;
+    }
+
+    .information {
+        padding-right: 20px;
+    }
+
+
+
+    /*====================MARKETS PAGE=====================*/
+
+    .market {
+        flex-direction: column;
+    }
+
+    .market img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .market .market-content {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .single-top-section .contact-content {
+        grid-column: col-start 8 / span 5;
+        text-align: left;
+        margin-top: 0;
+        max-width: auto;
+    }
+
+
+
+    /*====================INDUSTIES PAGE=====================*/
+
+
+
+    /*====================SERVICES PAGE=====================*/
+
+
+    
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 865px) {
+
+    h1 {
+        font-size: 48px;
+        line-height: 54px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
 
     section {
         padding: 40px 10%;
@@ -588,4 +1423,134 @@ section.company-values {
         width: 80%;
         margin: 0 10% 25px 10%;
     }
+
+
+
+
+    /*=========== TEAM PAGE ===============*/
+    .join-our-team-content {
+        grid-column: col-start / span 12;
+        text-align: center;
+    }
+
+    .join-our-team-img {
+        background: url(../img/team.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+
+    section.join-our-team {
+        margin-bottom: 400px;
+    }
+
+    .team-member h4 {
+        font-size: 14px;
+    }
+
+
+
+
+    /*====================COMMUNITY PAGE=====================*/
+    .row-with-right-img {
+        flex-direction: column;
+    }
+
+    .row-with-right-img-content {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .row-with-right-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .row-with-left-img img {
+        display: none;
+    }
+
+    .row-with-left-img-content {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .point {
+        width: 80%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+
+
+    /*====================CAREERS PAGE=====================*/
+
+
+
+    /*====================RESOURCES PAGE=====================*/
+
+
+
+    /*====================CONTACT PAGE=====================*/
+
+    .contact-information .contact-content {
+        grid-column: col-start / span 12;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .information {
+        grid-column: col-start / span 12;
+        text-align: center;
+        padding-right: 0;
+    }
+
+
+
+    /*====================MARKETS PAGE=====================*/
+
+    .market {
+        grid-column: col-start / span 12;
+    }
+
+    .single-top-section .contact-content {
+        grid-column: col-start / span 12;
+        text-align: center;
+        margin-top: 40px;
+        max-width: auto;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .single-top-section .content {
+        grid-column: col-start / span 12;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .single-top-section .content img {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+
+
+    /*====================INDUSTIES PAGE=====================*/
+
+
+
+    /*====================SERVICES PAGE=====================*/
+
+    .approach-item {
+        padding: 20px;
+    }
+
+
+
 }
