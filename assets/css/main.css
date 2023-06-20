@@ -203,10 +203,21 @@ section.page-header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+}
+
+.darken {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .page-header-content {
     max-width: 600px;
+    position: relative;
+    z-index: 10;
 }
 
 .page-header-content h1 {
