@@ -7,6 +7,12 @@
     font-family:  'Montserrat', sans-serif;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 body {
     line-height: 1;
 }
